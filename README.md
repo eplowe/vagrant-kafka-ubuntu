@@ -28,4 +28,3 @@ This was heavily influenced by the following two projects
 
 *https://github.com/stealthly/scala-kafka
 *https://github.com/eucuepo/vagrant-kafka
--
