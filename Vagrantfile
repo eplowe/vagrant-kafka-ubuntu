@@ -18,7 +18,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.gui = false
         v.customize ["modifyvm", :id, "--memory", "1024"]
         v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
-        v.name = "zookeeper#{i}"
       end
       s.vm.hostname = "zookeeper#{i}"
       s.vm.network "private_network", ip: "33.33.33.#{i+1}"
@@ -34,7 +33,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.gui = false
         v.customize ["modifyvm", :id, "--memory", "1024"]
         v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
-        v.name = "broker#{i}"
       end
       s.vm.hostname = "broker#{i}"
       s.vm.network "private_network", ip: "33.33.33.#{4-i}0"
