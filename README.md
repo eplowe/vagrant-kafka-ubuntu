@@ -23,7 +23,7 @@ Setup
 
 To start it up, just git clone this repo and execute ```vagrant up```. Takes a while the first time as it will download all required dependencies for you.
 
-Kafka is installed on ```/opt/apache/kafka```
+Kafka is installed in ```/opt/apache/kafka```
 
 Credit
 -------------------------
