@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
   config.ssh.forward_agent = true
-  config.vm.provision "shell", inline: "if [ $(grep -c UTC /etc/timezone) -gt 0 ]; then echo \"#{timezone}\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata; fi"
+  config.vm.provision "shell", inline: "if [ $(grep -c UTC /etc/timezone) -gt 0 ]; then echo \"#{timezone}\" | tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata; fi"
   config.vm.provision "shell", path: "scripts/init.sh"
 
   # configure zookeeper cluster
