@@ -7,12 +7,16 @@ This configuration will start and provision 6 Ubuntu 12.04 VMs:
 * Three Apache Zookeeper hosts configured on cluster
 * Three Apache Kafka hosts with one broker each
 
-Each host is provisioned with JDK 7 and Kafka 0.8.1.1
+Each host is provisioned with:
+
+* JDK 7
+* Kafka 0.8.1.1
+* [kafkacat](https://github.com/edenhill/kafkacat)
 
 Prerequisites
 -------------------------
-* Vagrant
-* VirtualBox
+* [Vagrant](https://www.vagrantup.com)
+* [VirtualBox](https://www.virtualbox.org)
 
 Setup
 -------------------------
@@ -26,5 +30,5 @@ Credit
 
 This was heavily influenced by the following two projects
 
-*https://github.com/stealthly/scala-kafka
-*https://github.com/eucuepo/vagrant-kafka
+* [scala-kafka](https://github.com/stealthly/scala-kafka)
+* [vagrant-kafka](https://github.com/eucuepo/vagrant-kafka)
