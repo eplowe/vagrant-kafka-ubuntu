@@ -28,7 +28,7 @@ Kafka is installed on ```/opt/apache/kafka```
 Credit
 -------------------------
 
-A big thanks goes out to these two projects below that served as the basis and inspiration for this project:
+A big thanks goes out to following projects below that served as the basis and inspiration for this project:
 
 * [scala-kafka](https://github.com/stealthly/scala-kafka)
 * [vagrant-kafka](https://github.com/eucuepo/vagrant-kafka)
